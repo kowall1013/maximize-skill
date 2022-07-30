@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
+import Header from "components/Header";
+
 import GlobalStyles from "globalStyles";
 import { COLORS } from "constant";
+import SectionMinimizeBudget from "components/SectionMinimizeBudget";
 
 const Wrapper = styled.div`
   max-width: 1110px;
@@ -15,7 +18,8 @@ function App() {
   return (
     <Wrapper>
       <GlobalStyles />
-      <h1>Maximize skill</h1>
+      <Header />
+      <SectionMinimizeBudget />
     </Wrapper>
   );
 }
