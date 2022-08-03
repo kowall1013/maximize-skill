@@ -5,6 +5,7 @@ import Header from "components/Header";
 import GlobalStyles from "globalStyles";
 import { COLORS } from "constant";
 import SectionMinimizeBudget from "components/SectionMinimizeBudget";
+import Cards from "components/Cards";
 
 const Wrapper = styled.div`
   max-width: 1110px;
@@ -20,6 +21,7 @@ function App() {
       <GlobalStyles />
       <Header />
       <SectionMinimizeBudget />
+      <Cards />
     </Wrapper>
   );
 }

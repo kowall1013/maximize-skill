@@ -19,9 +19,10 @@ const StyledButton = styled.button<ButtonStyledProps>`
   font-weight: ${FONT_WEIGHT.fw_700};
   background-color: ${({ bgcColor }) => bgcColor};
   border-radius: 28px;
-  outline: none;
-  border: 1px solid ${({ bgcColor }) => bgcColor};
+  outline-color: ${COLORS.secondary};
+  border: none;
   padding: 14px 32px;
+  background-image: ${({ bgcColor }) => bgcColor};
 
   &:hover {
     background-color: ${({ bgcHoverColor }) => bgcHoverColor};
@@ -34,6 +35,7 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset";
   bgcColor?: string;
   bgcHoverColor?: string;
+  isSecendary?: boolean;
 };
 
 function Button({
