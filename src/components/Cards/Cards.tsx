@@ -17,22 +17,27 @@ const Title = styled.h2`
   font-weight: ${FONT_WEIGHT.fw_800};
   border-radius: 10px;
   color: ${COLORS.white};
+  margin-bottom: 40px;
+`;
+
+const List = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
 `;
 
 function Cards(): JSX.Element {
   return (
     <Wrapper>
       <Title>Check out our most popular courses!</Title>
-      <ul>
+      <List>
         {cardsData.map((card) => (
           <Card
             key={card.id}
             title={card.title}
-            icon={card.icon}
             description={card.description}
           />
         ))}
-      </ul>
+      </List>
     </Wrapper>
   );
 }

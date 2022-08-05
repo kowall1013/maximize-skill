@@ -61,3 +61,11 @@ export const COLORS = {
     hsl(236deg 100% 97%) 100%
   );`,
 };
+
+export const CONSTANT_STRING = {
+  animation: "Animation",
+  design: "Design",
+  photography: "Photography",
+  crypto: "Crypto",
+  business: "Business",
+};
