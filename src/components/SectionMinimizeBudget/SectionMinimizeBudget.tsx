@@ -1,14 +1,18 @@
+import styled from "styled-components";
+
 import Button from "components/Button";
 import Image from "components/Image";
 
 import { Description } from "components/styled";
-import { COLORS, FONT_WEIGHT } from "constant";
-import styled from "styled-components";
+import { COLORS, FONT_WEIGHT, QUERIES } from "constant";
 
 const StyledSection = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: flex-start;
+
+  @media ${QUERIES.tabletAndUp} {
+  }
 `;
 
 const Title = styled.h1`
@@ -23,15 +27,19 @@ const ImageWrapper = styled.div`
   margin-top: 46px;
 `;
 
+const DetailsWrapper = styled.div``;
+
 function SectionMinimizeBudget(): JSX.Element {
   return (
     <StyledSection>
-      <Title>Maximize skill, minimize budget</Title>
-      <Description>
-        Our modern courses across a range of in-demand skills will give you the
-        knowledge you need to live the life you want.
-      </Description>
-      <Button bgcColor={COLORS.gradient_primary}>Get Started</Button>
+      <DetailsWrapper>
+        <Title>Maximize skill, minimize budget</Title>
+        <Description>
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </Description>
+        <Button bgcColor={COLORS.gradient_primary}>Get Started</Button>
+      </DetailsWrapper>
       <ImageWrapper>
         <Image
           src="image-hero-mobile.png"

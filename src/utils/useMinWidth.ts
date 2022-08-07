@@ -8,7 +8,6 @@ export const useMinWidth = (minWidth: number) => {
     let mediaQuery: MediaQueryList;
 
     const handleMediaChange = (mql: any) => {
-      console.log("mql", mql);
       setHasWidth(mql.matches);
     };
 
