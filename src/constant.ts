@@ -36,15 +36,7 @@ export const COLORS = {
   );`,
   gradient_secondary: `linear-gradient(
     180deg,
-    hsl(13deg 100% 64%) 0%,
-    hsl(7deg 99% 63%) 11%,
-    hsl(2deg 97% 62%) 22%,
-    hsl(356deg 96% 61%) 33%,
-    hsl(350deg 94% 60%) 44%,
-    hsl(345deg 92% 59%) 56%,
-    hsl(339deg 92% 58%) 67%,
-    hsl(334deg 90% 57%) 78%,
-    hsl(328deg 88% 56%) 89%,
+    hsl(237deg 100% 64%) 0%,
     hsl(322deg 87% 55%) 100%
   );`,
   gradient_white_gray: `linear-gradient(

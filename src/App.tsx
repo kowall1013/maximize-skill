@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
+import SectionMinimizeBudget from "components/SectionMinimizeBudget";
 import Header from "components/Header";
+import Cards from "components/Cards";
+import Footer from "components/Footer";
 
 import GlobalStyles from "globalStyles";
 import { COLORS } from "constant";
-import SectionMinimizeBudget from "components/SectionMinimizeBudget";
-import Cards from "components/Cards";
 
 const Wrapper = styled.div`
   max-width: 1110px;
@@ -17,12 +18,15 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-    <Wrapper>
-      <GlobalStyles />
-      <Header />
-      <SectionMinimizeBudget />
-      <Cards />
-    </Wrapper>
+    <>
+      <Wrapper>
+        <GlobalStyles />
+        <Header />
+        <SectionMinimizeBudget />
+        <Cards />
+      </Wrapper>
+      <Footer />
+    </>
   );
 }
 
